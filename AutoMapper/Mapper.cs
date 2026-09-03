@@ -42,7 +42,7 @@ namespace AutoMapper
                     var destList = noArgsList.MakeGenericType(destArgsType);
                     var destInstanceList = Activator.CreateInstance(destList);
                     IList list = (IList)destInstanceList;
-
+                    ///測試
                     IEnumerable sourceList = (IEnumerable)sourceProp.GetValue(source);
                     IEnumerator enumerator = sourceList.GetEnumerator();
                     while (enumerator.MoveNext())
