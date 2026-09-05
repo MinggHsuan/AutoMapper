@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutoMapper
 {
-    internal enum ValueType
+    internal enum ValueEnumType
     {
         ArrayType,
         ListType,

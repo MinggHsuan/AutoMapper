@@ -50,7 +50,13 @@
     <Compile Include="StudentDAO.cs" />
     <Compile Include="StudentDTO.cs" />
     <Compile Include="StudentType.cs" />
-    <Compile Include="ValueType.cs" />
+    <Compile Include="ValueEnumType.cs" />
+    <Compile Include="ValueTypes\ArrayType.cs" />
+    <Compile Include="ValueTypes\BasicType.cs" />
+    <Compile Include="ValueTypes\DictionaryType.cs" />
+    <Compile Include="ValueTypes\EnumType.cs" />
+    <Compile Include="ValueTypes\ListType.cs" />
+    <Compile Include="ValueTypes\AValueType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

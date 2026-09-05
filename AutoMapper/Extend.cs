@@ -12,38 +12,32 @@ namespace AutoMapper
 {
     internal class Extend
     {
-        public static ValueType FindType(Type destType)
+        public static ValueEnumType FindType(Type destType)
         {
 
             if (destType.IsEnum)
             {
-                return ValueType.EnumType;
+                return ValueEnumType.EnumType;
             }
             else if (destType.IsArray)
             {
-                return ValueType.ArrayType;
+                return ValueEnumType.ArrayType;
             }
-            //else if (destType.IsGenericType && destType.GetInterfaces().Any(x => x.GetGenericTypeDefinition() == typeof(IDictionary)))
-            //{
-            //    return ValueType.DictionaryType;
-            //}
-
-
             else if (destType.GetInterfaces().Any(x => x.IsGenericType && x.GetGenericTypeDefinition() == typeof(IDictionary)))
             {
-                return ValueType.DictionaryType;
+                return ValueEnumType.DictionaryType;
             }
             else if (destType.GetInterfaces().Any(x => x.IsGenericType && x.GetGenericTypeDefinition() == typeof(IEnumerable)))
             {
-                return ValueType.ListType;
+                return ValueEnumType.ListType;
             }
             else if (destType.IsClass)
             {
-                return ValueType.ClassType;
+                return ValueEnumType.ClassType;
             }
             else
             {
-                return ValueType.BasicType;
+                return ValueEnumType.BasicType;
             }
         }
 
