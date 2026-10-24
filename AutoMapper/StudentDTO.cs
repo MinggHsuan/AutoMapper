@@ -8,18 +8,26 @@ namespace AutoMapper
 {
     internal class StudentDTO
     {
-        public List<int> strings { get; set; }
-        public char Name { get; set; }
-        public string Class { get; set; }
+        //public List<Rule> strings { get; set; }
+        //public Dictionary<string, int> strings { get; set; }
+        //public Package package { get; set; }
+        public string Name { get; set; }
+        public int Class { get; set; }
         public StudentType Number { get; set; }
-        public StudentDTO(char name, string Class, StudentType number, List<int> ints)
+        public StudentDTO(string name, int Class, StudentType number)
         {
             this.Name = name;
             this.Class = Class;
             this.Number = number;
-            this.strings = ints;
+            //this.package = package;
         }
-
+        //public StudentDTO(string name, int Class, StudentType number, /*Dictionary<string, int> ints*/)
+        //{
+        //    this.Name = name;
+        //    this.Class = Class;
+        //    this.Number = number;
+        //    //this.strings = ints;
+        //}
         public StudentDTO()
         {
         }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +10,9 @@ namespace AutoMapper.ValueTypes
 {
     internal class EnumType : AValueType
     {
-        public override void Create()
+        public override object Create(Type sourceType, object source, Type destType)
         {
-            destprop.SetValue(dest, Enum.Parse(destprop.PropertyType, sourceProp.GetValue(source).ToString()));
+            return Enum.Parse(destType, source.ToString());
         }
     }
 }

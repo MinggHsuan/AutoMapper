@@ -43,16 +43,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DestModel.cs" />
+    <Compile Include="ExpressionFolder\AExpressionType.cs" />
+    <Compile Include="ExpressionFolder\BinaryType.cs" />
+    <Compile Include="ExpressionFolder\ConditionalType.cs" />
+    <Compile Include="ExpressionFolder\ConstantType.cs" />
+    <Compile Include="ExpressionFolder\MemberType.cs" />
+    <Compile Include="ExpressionFolder\MethodCallType.cs" />
+    <Compile Include="ExpressionFolder\NewExpType.cs" />
+    <Compile Include="ExpressionFolder\ParameterType.cs" />
+    <Compile Include="ExpressionFolder\UnaryType.cs" />
+    <Compile Include="ExpressionType.cs" />
     <Compile Include="Extend.cs" />
+    <Compile Include="MapExpression.cs" />
     <Compile Include="Mapper.cs" />
+    <Compile Include="Package.cs" />
+    <Compile Include="Pencil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rule.cs" />
     <Compile Include="StudentDAO.cs" />
     <Compile Include="StudentDTO.cs" />
     <Compile Include="StudentType.cs" />
     <Compile Include="ValueEnumType.cs" />
     <Compile Include="ValueTypes\ArrayType.cs" />
     <Compile Include="ValueTypes\BasicType.cs" />
+    <Compile Include="ValueTypes\ClassType.cs" />
     <Compile Include="ValueTypes\DictionaryType.cs" />
     <Compile Include="ValueTypes\EnumType.cs" />
     <Compile Include="ValueTypes\ListType.cs" />

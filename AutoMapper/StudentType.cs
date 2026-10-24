@@ -8,8 +8,7 @@ namespace AutoMapper
 {
     internal enum StudentType
     {
-        Student = 30,
-        s = 32,
-        a = 36
+        男生 = 1,
+        女生 = 2,
     }
 }
